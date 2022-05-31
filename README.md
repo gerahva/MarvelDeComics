@@ -1,10 +1,11 @@
 # MarvelApp
-![](marvel_splash.png)![](uno.png)![](dos.png)
+![](marvel_splash.png)
 
 Aplicacion de Marvel para mostrar personajes, se usa el patron de diseno MVP con RecyclerView en Fragments y SplashScreen tipo Netflix para cargado de lo datos del back end. La aplicacion tambien utiliza  Picasso para mostrar las imagenes del backend. Otra caracteristica importante es que para comunicacion en los fragments para compartir el persnaje que se toque en el Recyclerview, usamos **androidx.navigation.safeargs** el cual es recomendado para compartir objetos entre fragments.
 
+![](uno.png)
     Para   crear la api de acceso utilizamos **Retrofit**, con el que se construye  el api de acceso. 
-
+![](dos.png)
 Igualmente nos apoyamos de retrofit para hacer el  testing de la **REST API** de Marvel, en este caso se hace una prueba para probar el acceso de la api con retrofi y vrificar que el estatus de respuesta es 200 (OK) para confirmar la recepcion del objeto Modelo de la api.
 Para crear la assercion nos apoyamos de un servidor tipo Mock el cual posee un mock local del objeto remoto. A continuacion s emuestra el codio, que se encuentra en la carpeta unitTest del proyecto.
 
