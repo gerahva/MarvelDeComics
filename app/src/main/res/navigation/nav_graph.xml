@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentLista">
+
+    <fragment
+        android:id="@+id/fragmentLista"
+        android:name="com.hva.marvelapp.FragmentLista"
+        android:label="fragment_lista"
+        tools:layout="@layout/fragment_lista" >
+        <action
+            android:id="@+id/action_fragmentLista_to_fragmentDetalles"
+            app:destination="@id/fragmentDetalles" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetalles"
+        android:name="com.hva.marvelapp.FragmentDetalles"
+        android:label="fragment_detalles"
+        tools:layout="@layout/fragment_detalles" >
+        <argument
+            android:name="comic"
+            app:argType="com.hva.marvelapp.model.Comic" />
+    </fragment>
+</navigation>
