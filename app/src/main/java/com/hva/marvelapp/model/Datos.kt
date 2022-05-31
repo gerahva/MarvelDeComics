@@ -1,9 +1,10 @@
 package com.hva.marvelapp.model
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
+import java.io.Serializable
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-class Datos {
+class Datos:Serializable {
     var offset:Int?=null
     var limit:Int?=null
     var total:Int?=null

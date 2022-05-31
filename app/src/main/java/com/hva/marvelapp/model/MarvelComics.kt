@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import java.io.Serializable
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-class MarvelComics {
+class MarvelComics:Serializable {
    var code:Int?=null
    var status:String?=null
     var copyright:String?=null
