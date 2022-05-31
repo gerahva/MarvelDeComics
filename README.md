@@ -1,5 +1,5 @@
 # MarvelApp
-![](marvel_splash.png)
+![](marvel_splash.png)![](uno.png)![](dos.png)
 
 Aplicacion de Marvel para mostrar personajes, se usa el patron de diseno MVP con RecyclerView en Fragments y SplashScreen tipo Netflix para cargado de lo datos del back end. La aplicacion tambien utiliza  Picasso para mostrar las imagenes del backend. Otra caracteristica importante es que para comunicacion en los fragments para compartir el persnaje que se toque en el Recyclerview, usamos **androidx.navigation.safeargs** el cual es recomendado para compartir objetos entre fragments.
 
