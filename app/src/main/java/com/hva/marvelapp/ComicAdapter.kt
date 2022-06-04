@@ -22,8 +22,7 @@ class ComicAdapter(private val onClick:(Comic)->Unit):
                     private val stories_v=itemView.findViewById<TextView>(R.id.stories_tv)
                     private val events_v=itemView.findViewById<TextView>(R.id.events_tv)
 
-
-                   //Imagen
+                   //Imagen tipo icono pequeno
                    private val imageView=itemView.findViewById<ImageView>(R.id.imageView)
 
             //Model a "adaptar"

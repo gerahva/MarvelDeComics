@@ -39,14 +39,7 @@ class SplashScreenActivity : AppCompatActivity() {
             //Los characters los obtenemos
           comics=marvelComics.data?.results!!
 
-         Log.i("XY",  "total ${marvelComics.code}")
-
-
-
-
-
-                    //Asignamos el atributo
-                   // misCharacters=lista
+     //    Log.i("XY",  "total ${marvelComics.code}")
 
 
 

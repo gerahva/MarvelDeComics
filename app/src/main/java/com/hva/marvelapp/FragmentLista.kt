@@ -15,9 +15,6 @@ import com.hva.marvelapp.model.Comic
 class FragmentLista : Fragment() {
 
 
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -48,7 +45,7 @@ class FragmentLista : Fragment() {
         //Aqui tendriamos que inyectarle ora vista para que nos lleve a esa vista
 
        Log.i("XY","el nombre es ${comic.title}")
-        //Esta accion es por el safe args que agregamos para hacer mas segura el
+        //Esta accion es por el safe args que agregamos para hacer mas segura el cccc
         //paso de argumentos de un fragment (FragmentLista) a otro (FragmentDetalles)
         //La clase Directions se autogenera al agregar el argumento de tipo Character
         //que agregamos en el layout del fragment_detalles

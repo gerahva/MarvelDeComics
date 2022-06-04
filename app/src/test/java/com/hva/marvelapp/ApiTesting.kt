@@ -27,7 +27,7 @@ class ApiTesting {
 
 
     @Test
-    fun `leer muestra o mocking del json del request`(){
+    fun `leer muestra o mocking del json del request local`(){
 
         var  mockedResponse = MockFileReader("success_response.json").content
 
@@ -37,23 +37,23 @@ class ApiTesting {
 
     //Probamos que la respuesta del servidor sea igual a la del mock
     @Test
-    fun `leer y contrastar del json del request`(){
+    fun `leer y contrastar local con remoto`(){
 
-        // Servidor mocking
+        // Servidor mocking local
         val response = MockResponse()
             .setResponseCode(HttpURLConnection.HTTP_OK)
             .setBody(MockFileReader("success_response.json").content)
         mockWebServer?.enqueue(response)
 
-        //Servidor real
-        val characterMarvel = ClienteAPI.getApi()?.getCharacterMarvel(
+        //Servidor real o remoto
+        val comicMarvel = ClienteAPI.getApi()?.getMarvelComic(
             TS,
             API_KEY,
             HASH
         )?.execute()?.body()!!
 
         assertEquals(response.toString().contains("200"),
-            characterMarvel.code.toString().contains("200"))
+            comicMarvel.code.toString().contains("200"))
 
     }
 
